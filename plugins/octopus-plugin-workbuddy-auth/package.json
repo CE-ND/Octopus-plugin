@@ -1,5 +1,5 @@
 {
-  "name": "@octopus/plugin-workbuddy-auth",
+  "name": "@cend/octopus-plugin-workbuddy-auth",
   "version": "1.0.0",
   "description": "WorkBuddy provider plugin for Octopus (China and WorkBuddy AI).",
   "type": "module",
@@ -21,14 +21,18 @@
     "codebuddy"
   ],
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/magpie-community/plugins.git",
-    "directory": "packages/workbuddy"
+    "url": "git+https://github.com/CE-ND/Octopus-plugin.git",
+    "directory": "plugins/octopus-plugin-workbuddy-auth"
   },
   "octopus": {
     "displayName": "WorkBuddy",
     "replaces": [
+      "@octopus/plugin-workbuddy-auth",
       "@magpie-community/opencode-workbuddy-auth"
     ],
     "upstream": {

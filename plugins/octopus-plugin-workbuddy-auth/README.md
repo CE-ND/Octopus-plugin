@@ -1,4 +1,4 @@
-# @octopus/plugin-workbuddy-auth
+# @cend/octopus-plugin-workbuddy-auth
 
 This is an Octopus-adapted package based on `@magpie-community/opencode-workbuddy-auth@0.2.20`.
 It vendors the upstream WorkBuddy provider implementation and adds Octopus package metadata

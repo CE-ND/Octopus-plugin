@@ -1,0 +1,52 @@
+{
+  "name": "@octopus/plugin-workbuddy-auth",
+  "version": "1.0.0",
+  "description": "WorkBuddy provider plugin for Octopus (China and WorkBuddy AI).",
+  "type": "module",
+  "main": "./opencode.mjs",
+  "exports": { ".": "./opencode2.mjs" },
+  "files": [
+    "index.mjs",
+    "opencode.mjs",
+    "opencode2.mjs",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "keywords": [
+    "octopus",
+    "octopus-plugin",
+    "opencode",
+    "workbuddy",
+    "codebuddy"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magpie-community/plugins.git",
+    "directory": "packages/workbuddy"
+  },
+  "octopus": {
+    "displayName": "WorkBuddy",
+    "replaces": [
+      "@magpie-community/opencode-workbuddy-auth"
+    ],
+    "upstream": {
+      "name": "@magpie-community/opencode-workbuddy-auth",
+      "version": "0.2.20"
+    },
+    "ui": {
+      "configSchema": {
+        "type": "object",
+        "properties": {
+          "free_only": {
+            "type": "boolean",
+            "title": "仅免费模型 / Free models only",
+            "description": "只列出 WorkBuddy 不消耗额度的模型；其他模型请求会在插件内被拒绝。",
+            "default": false
+          }
+        }
+      }
+    }
+  }
+}

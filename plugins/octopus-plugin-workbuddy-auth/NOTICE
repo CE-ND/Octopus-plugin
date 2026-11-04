@@ -1,0 +1,15 @@
+@octopus/plugin-workbuddy-auth
+==============================
+
+This package is an Octopus-adapted distribution of:
+
+  @magpie-community/opencode-workbuddy-auth
+  version 0.2.20
+  https://github.com/magpie-community/plugins/tree/main/packages/workbuddy
+
+The WorkBuddy provider logic in index.mjs, opencode.mjs and opencode2.mjs is
+vendored from that MIT-licensed package. The adaptation adds Octopus package
+metadata (octopus.ui.configSchema) and does not change the upstream provider
+implementation.
+
+Original license: MIT. See LICENSE.
